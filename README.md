@@ -113,3 +113,14 @@ grok-bot/prospecting-desk.txt  setup message for the Prospecting Desk bot
 
 MIT licence. Issues and requests: the GitHub issue tracker of this repository.
 Actors and pricing: [apify.com/b2bsearch](https://apify.com/b2bsearch).
+
+## More b2bsearch plugins
+
+Same data and the same Apify account, split by job:
+
+- [Contact Finder](https://github.com/b2bsearch/contact-finder): emails and phone numbers for people you already have, reverse email lookup, bulk enrichment
+- [B2B Leads Finder](https://github.com/b2bsearch/b2b-leads-finder): lead lists with emails and phones, saved-search import, weekly top-ups
+- [Hiring Signals](https://github.com/b2bsearch/hiring-signals): who is hiring for a role, postings that mention a technology, decision makers at hiring companies
+- [Account Signals](https://github.com/b2bsearch/account-signals): new hires and job changes at target accounts, champion tracking, lookalike companies
+
+All of them install from one Claude Code marketplace: `claude plugin marketplace add b2bsearch/b2bsearch-plugin`.
