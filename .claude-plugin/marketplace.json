@@ -1,0 +1,17 @@
+{
+  "name": "full-icp-search",
+  "owner": {
+    "name": "b2bsearch"
+  },
+  "metadata": {
+    "description": "Full ICP Search: B2B people, company, email, phone and jobs data as agent tools",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "full-icp-search",
+      "source": "./",
+      "description": "Size an ICP for free, then pull people, leads with emails and phones, decision makers, companies and hiring signals; pay per row on Apify"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "full-icp-search",
+  "version": "1.0.0",
+  "description": "Full ICP Search for Cursor, Claude Code and Grok Bot: size your ideal customer profile for free, then pull people and B2B leads with live emails, verified mobile numbers, decision makers by company domain, company lists with funding and hiring signals from 1B+ professional profiles. Pay per row on Apify.",
+  "author": {
+    "name": "b2bsearch",
+    "url": "https://apify.com/b2bsearch"
+  },
+  "homepage": "https://apify.com/b2bsearch",
+  "repository": "https://github.com/b2bsearch/full-icp-search",
+  "license": "MIT",
+  "keywords": [
+    "icp",
+    "lead-generation",
+    "b2b-leads",
+    "prospecting",
+    "email-finder",
+    "phone-finder",
+    "decision-makers",
+    "company-data",
+    "hiring-signals",
+    "mcp",
+    "grok-bot",
+    "cursor",
+    "apify"
+  ]
+}
