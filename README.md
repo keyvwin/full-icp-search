@@ -18,7 +18,6 @@ segment for free first, then pays per row found through your Apify account.
 | `linkedin-to-phone` | verified mobile numbers for a list of profile URLs (mostly US) |
 | `linkedin-job-search-api` | 50M+ job postings as hiring signals; free preview with breakdowns |
 | `full-icp-search` | one run for the whole profile: the companies that fit, decision makers in each with an email that reaches them, open jobs; free preview first |
-| `call-actor` | the other 27 [Actors](https://apify.com/b2bsearch) by id: company employees, reverse email lookup, phones by email or by name, new hires, lookalike companies, bulk enrichment, hiring companies |
 
 Eight skills teach the agent the method: size first, cap the spend, keep lists clean,
 report what was skipped. See [skills/](skills/).
@@ -53,40 +52,8 @@ most the run can cost, waits for your yes and then runs with a spend cap.
 
 The `ready-made-tasks` skill holds 32 tested inputs, each a public Apify task page:
 
-- [1. Sales leaders at mid-size US companies](https://apify.com/b2bsearch/b2b-leads-finder/examples/us-sales-leaders-with-emails)
-- [2. Small business owners](https://apify.com/b2bsearch/b2b-leads-finder/examples/small-business-owners-us-with-emails)
-- [3. Managing directors in Germany](https://apify.com/b2bsearch/b2b-leads-finder/examples/geschaeftsfuehrer-germany-with-emails)
-- [4. HR and talent leaders, or procurement managers](https://apify.com/b2bsearch/b2b-leads-finder/examples/hr-and-talent-leaders-with-work-emails)
-- [5. Rerun a search built in Apollo](https://apify.com/b2bsearch/b2b-leads-finder/examples/apollo-search-url-to-leads)
-- [6. People you can call, not just email](https://apify.com/b2bsearch/b2b-leads-with-phones/examples/us-sales-leaders-mobile-numbers)
-- [7. How many software engineers per country](https://apify.com/b2bsearch/people-database-search/examples/software-engineers-by-country-free-count)
-- [8. Compare sales team size across companies](https://apify.com/b2bsearch/people-database-search/examples/sales-team-size-by-company-free-count)
-- [9. Count a Sales Navigator search before exporting it](https://apify.com/b2bsearch/sales-navigator-search/examples/count-sales-navigator-search-free)
-- [10. Profile URLs to mobile numbers](https://apify.com/b2bsearch/linkedin-to-phone/examples/linkedin-urls-to-mobile-numbers)
-- [11. CRM contacts with an email and no number](https://apify.com/b2bsearch/linkedin-to-phone/examples/crm-emails-to-mobile-numbers)
-- [12. Profile URLs to work emails](https://apify.com/b2bsearch/linkedin-email-finder/examples/linkedin-urls-to-work-emails)
-- [13. Find the CRM contacts who will bounce](https://apify.com/b2bsearch/linkedin-email-finder/examples/crm-contacts-with-past-employer-emails)
-- [14. Personal emails for recruiting](https://apify.com/b2bsearch/linkedin-email-finder/examples/personal-emails-for-recruiting)
-- [15. The leadership team of one company](https://apify.com/b2bsearch/company-employees/examples/leadership-team-by-company-domain)
-- [16. Every employee, then contacts only where needed](https://apify.com/b2bsearch/company-employees/examples/all-employees-by-company-domain)
-- [17. Engineers at a company you recruit from](https://apify.com/b2bsearch/company-employees/examples/engineers-at-a-company)
-- [18. The CEO and founders of a list of companies](https://apify.com/b2bsearch/domain-to-decision-makers/examples/ceo-and-founders-by-company-domain)
-- [19. The email format of a domain](https://apify.com/b2bsearch/company-email-format-finder/examples/email-format-of-company-domains)
-- [20. Companies hiring account executives right now](https://apify.com/b2bsearch/hiring-companies-finder/examples/companies-hiring-account-executives-us)
-- [21. New senior hires at your target accounts](https://apify.com/b2bsearch/new-hires-finder/examples/new-hires-at-target-accounts)
-- [22. Former employees and where they are now](https://apify.com/b2bsearch/former-employees-finder/examples/former-employees-of-a-company)
-- [23. New VPs of sales since last October](https://apify.com/b2bsearch/people-database-search/examples/new-sales-leaders-since-october-2025)
-- [24. Who hires for a technology in a city](https://apify.com/b2bsearch/linkedin-job-search-api/examples/kubernetes-jobs-berlin-hiring-companies)
-- [25. Seed startups in Europe funded since 2025](https://apify.com/b2bsearch/company-database-search/examples/seed-startups-europe-funded-since-2025)
-- [26. Companies like your best customers](https://apify.com/b2bsearch/lookalike-company-finder/examples/companies-similar-to-your-best-customers)
-- [27. Clean up a column of messy domains](https://apify.com/b2bsearch/domain-to-company/examples/domain-to-company-name)
-- [28. Qualify inbound sign-ups by email](https://apify.com/b2bsearch/reverse-email-lookup/examples/qualify-inbound-signups-by-email)
-- [29. Where do your customer contacts work now](https://apify.com/b2bsearch/profile-lookup/examples/where-do-my-contacts-work-now)
-- [30. A CRM export with a bit of everything](https://apify.com/b2bsearch/waterfall-lead-enrichment/examples/crm-export-to-emails-and-phones)
-- [31. Recently funded US startups with their founders](https://apify.com/b2bsearch/full-icp-search/examples/recently-funded-us-startups-founders)
-- [32. Funded startups hiring their first sales reps](https://apify.com/b2bsearch/full-icp-search/examples/funded-startups-hiring-first-sales-reps)
 
-Generated from [recipes/tasks.json](https://github.com/b2bsearch/b2bsearch-plugin/blob/main/recipes/tasks.json).
+Generated from [recipes/tasks.json](https://github.com/keyvwin/b2bsearch-plugin/blob/main/recipes/tasks.json).
 <!-- recipes:end -->
 
 ## Install
@@ -114,7 +81,7 @@ folder to `~/.cursor/plugins/local/full-icp-search` and reload the window. Conne
 ### Claude Code
 
 ```bash
-claude plugin marketplace add b2bsearch/full-icp-search
+claude plugin marketplace add keyvwin/full-icp-search
 claude plugin install full-icp-search@full-icp-search
 ```
 
@@ -173,15 +140,14 @@ grok-bot/prospecting-desk.txt  setup message for the Prospecting Desk bot
 ```
 
 MIT licence. Issues and requests: the GitHub issue tracker of this repository.
-Actors and pricing: [apify.com/b2bsearch](https://apify.com/b2bsearch).
 
 ## More b2bsearch plugins
 
 Same data and the same Apify account, split by job:
 
-- [Contact Finder](https://github.com/b2bsearch/contact-finder): emails and phone numbers for people you already have, reverse email lookup, bulk enrichment
-- [B2B Leads Finder](https://github.com/b2bsearch/b2b-leads-finder): lead lists with emails and phones, saved-search import, weekly top-ups
-- [Hiring Signals](https://github.com/b2bsearch/hiring-signals): who is hiring for a role, postings that mention a technology, decision makers at hiring companies
-- [Account Signals](https://github.com/b2bsearch/account-signals): new hires and job changes at target accounts, champion tracking, lookalike companies
+- [Contact Finder](https://github.com/keyvwin/contact-finder): emails and phone numbers for people you already have, reverse email lookup, bulk enrichment
+- [B2B Leads Finder](https://github.com/keyvwin/b2b-leads-finder): lead lists with emails and phones, saved-search import, weekly top-ups
+- [Hiring Signals](https://github.com/keyvwin/hiring-signals): who is hiring for a role, postings that mention a technology, decision makers at hiring companies
+- [Account Signals](https://github.com/keyvwin/account-signals): new hires and job changes at target accounts, champion tracking, lookalike companies
 
-All of them install from one Claude Code marketplace: `claude plugin marketplace add b2bsearch/b2bsearch-plugin`.
+All of them install from one Claude Code marketplace: `claude plugin marketplace add keyvwin/b2bsearch-plugin`.
