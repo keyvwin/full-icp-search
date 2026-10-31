@@ -1,7 +1,7 @@
 {
   "name": "full-icp-search",
   "displayName": "Full ICP Search",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Full ICP Search for Cursor, Claude Code and Grok Bot: size your ideal customer profile for free, then pull people and B2B leads with live emails, verified mobile numbers, decision makers by company domain, company lists with funding and hiring signals from 1B+ professional profiles. Pay per row on Apify.",
   "author": {
     "name": "b2bsearch",
@@ -37,5 +37,6 @@
     "grok-bot"
   ],
   "skills": "./skills/",
+  "commands": "./commands/",
   "mcpServers": "./mcp.json"
 }

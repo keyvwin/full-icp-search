@@ -2,7 +2,7 @@
   "mcpServers": {
     "full-icp-search": {
       "type": "http",
-      "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,b2bsearch/people-database-search,b2bsearch/b2b-leads-finder,b2bsearch/company-database-search,b2bsearch/domain-to-decision-makers,b2bsearch/work-email-finder,b2bsearch/linkedin-job-search-api,b2bsearch/linkedin-email-finder,b2bsearch/linkedin-to-phone&client=full-icp-search"
+      "url": "https://mcp.apify.com/?tools=call-actor,fetch-actor-details,b2bsearch/people-database-search,b2bsearch/b2b-leads-finder,b2bsearch/company-database-search,b2bsearch/domain-to-decision-makers,b2bsearch/work-email-finder,b2bsearch/linkedin-job-search-api,b2bsearch/linkedin-email-finder,b2bsearch/linkedin-to-phone,b2bsearch/full-icp-search&client=full-icp-search"
     }
   }
 }

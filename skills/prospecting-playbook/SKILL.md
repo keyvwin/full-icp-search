@@ -48,6 +48,7 @@ A list built without step 2 costs money to discover it targeted the wrong people
 | Job postings as a signal; who is hiring; postings that mention a technology | `b2bsearch--linkedin-job-search-api` |
 | Email for a list of profile URLs | `b2bsearch--linkedin-email-finder` |
 | Verified mobile numbers for a list of profile URLs | `b2bsearch--linkedin-to-phone` |
+| Companies that fit a profile and the decision makers in each, with emails, in one run (funding, size, industry, hiring for a role) | `b2bsearch--full-icp-search`; free preview with `previewOnly: true` |
 
 The long tail runs through `call-actor` with `actor` set to the id and `input` as the
 Actor expects. `fetch-actor-details` with `output: { inputSchema: true }` returns the
@@ -72,6 +73,8 @@ schema when a field is unclear.
 `callOptions.maxTotalChargeUsd` on `call-actor` is a hard spend cap for the run.
 
 Emails and phones for people the user already has: the `emails-and-phones` skill.
+A tested input for a common job (lead lists, counts, signals, cleanup): the
+`ready-made-tasks` skill.
 
 ## 4. How a run comes back
 

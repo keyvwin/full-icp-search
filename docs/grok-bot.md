@@ -4,7 +4,7 @@ Any Grok Bot can use these tools through a custom MCP server. Paste this to your
 
 ```
 Add a custom MCP server named full-icp-search. Transport: streamable HTTP. URL:
-https://mcp.apify.com/?tools=call-actor,fetch-actor-details,b2bsearch/people-database-search,b2bsearch/b2b-leads-finder,b2bsearch/company-database-search,b2bsearch/domain-to-decision-makers,b2bsearch/work-email-finder,b2bsearch/linkedin-job-search-api,b2bsearch/linkedin-email-finder,b2bsearch/linkedin-to-phone
+https://mcp.apify.com/?tools=call-actor,fetch-actor-details,b2bsearch/people-database-search,b2bsearch/b2b-leads-finder,b2bsearch/company-database-search,b2bsearch/domain-to-decision-makers,b2bsearch/work-email-finder,b2bsearch/linkedin-job-search-api,b2bsearch/linkedin-email-finder,b2bsearch/linkedin-to-phone,b2bsearch/full-icp-search
 Authentication: OAuth, open the sign-in link for me. After it connects, call
 b2bsearch--people-database-search with mode "count", titleKeywords ["head of sales"]
 and countries ["nl"], and tell me the number. Counts are free.
